@@ -19,3 +19,25 @@
     writing text with a word/ character limit.   
 * <h4> Browser Compatible 🌐 -</h4>
     This word counter software works in any web browser such as Chrome Firefox Internet Explorer and Safari It counts characters in Facebook blogs books, Excel documents PDF documents essays, etc. Opera
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. git clone -</p>
+
+```
+https://github.com/animeredits/TextUtils.git
+```
+
+<p>2. cd TextUtils</p>
+
+<p>3. npm i</p>
+
+<p>4. npm run dev</p>
+
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   React
+*   Bootstrap
