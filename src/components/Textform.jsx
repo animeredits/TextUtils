@@ -5,9 +5,9 @@ const Textform = (props) => {
   };
   const capitalizeFLetter = () => {
     let capitalizeText = text
-      .split("")
-      .map((char, index) => (index === 0 ? char.toUpperCase() : char))
-      .join("");
+    .split(" ") 
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
     setText(capitalizeText);
     props.showAlert("Converted to Capitalize Text", "success");
   };
@@ -63,6 +63,8 @@ const Textform = (props) => {
             style={{
               backgroundColor: props.mode === "dark" ? "#374151" : "white",
               color: props.mode == "dark" ? "white" : "black",
+              border: "2px solid",
+              borderColor: props.mode == "dark" ? "white" : "black",
             }}
             id="Textarea"
             rows="9"
