@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from "react-hot-toast";
 const Textform = (props) => {
   const Texthandle = (e) => {
     setText(e.target.value);
@@ -9,22 +10,22 @@ const Textform = (props) => {
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
     setText(capitalizeText);
-    props.showAlert("Converted to Capitalize Text", "success");
+    toast.success("Converted to Capitalize Text", "success");
   };
   const upper = () => {
     let uppertext = text.toUpperCase();
     setText(uppertext);
-    props.showAlert("Converted to upper case", "success");
+    toast.success("Converted to upper case", "success");
   };
   const lower = () => {
     let lowert = text.toLowerCase();
     setText(lowert);
-    props.showAlert("Converted to lower case", "success");
+    toast.success("Converted to lower case", "success");
   };
   const revers = () => {
     let rev = text.split("").reverse().join("");
     setText(rev);
-    props.showAlert("Converted to Reverse case", "success");
+    toast.success("Converted to Reverse case", "success");
   };
 
   const handleCopy = () => {
@@ -32,18 +33,18 @@ const Textform = (props) => {
     text.select();
     navigator.clipboard.writeText(text.value);
     document.getSelection().removeAllRanges();
-    props.showAlert("Copy to Clipboard!", "success");
+    toast.success("Copy to Clipboard!", "success");
   };
 
   const ExtraSpace = () => {
     let ExtraSpace = text.split(/[ ]+/);
     setText(ExtraSpace.join(" "));
-    props.showAlert("Extra Space Removed ", "success");
+    toast.success("Extra Space Removed ", "success");
   };
   const Clear = () => {
     let clear = "";
     setText(clear);
-    props.showAlert("Clear", "success");
+    toast.success("Clear", "success");
   };
 
   const [text, setText] = useState("");

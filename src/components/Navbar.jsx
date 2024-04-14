@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import sun from './png/sun.png'
 const Navbar = (props) => {
   return (
     <div>

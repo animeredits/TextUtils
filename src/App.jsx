@@ -2,21 +2,11 @@ import { useState } from "react";
 import Aboutus from "./components/Aboutus";
 import Navbar from "./components/Navbar";
 import Textform from "./components/Textform";
-import Alert from "./components/Alert";
+import { Toaster } from "react-hot-toast";
 import { Routes, Route } from "react-router-dom";
 import moon from './components/png/moon.png'
 import sun from './components/png/sun.png'
 const App = () => {
-  const [alert, setAlert] = useState(null);
-  const showAlert = (massage, type) => {
-    setAlert({
-      msg: massage,
-      type: type,
-    });
-    setTimeout(() => {
-      setAlert(null);
-    }, 1500);
-  };
   const [mode, setMode] = useState("dark");
   const [icon, setIcon] = useState(sun);
   const ToggleMode = () => {
@@ -26,7 +16,7 @@ const App = () => {
       document.body.style.backgroundColor = "#ffff";
     } else {
       setMode("dark");
-      document.body.style.backgroundColor = "#23272f";
+      document.body.style.backgroundColor = "#010409";
       setIcon(sun)
     }
   };
@@ -39,14 +29,17 @@ const App = () => {
         ToggleMode={ToggleMode}
         icon={icon}
       />
-      <Alert alert={alert} />
+         <Toaster
+          position="top-center"
+          background="#060417"
+          reverseOrder={false}
+        />
       <Routes>
         <Route 
           path="/"
           element={
-            <div className="container">
+            <div className="container ">
               <Textform
-                showAlert={showAlert}
                 heading="Try TextUtils - Word Counter, Character Counter, Remove Extra Spaces "
                 mode={mode}
               />
