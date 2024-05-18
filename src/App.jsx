@@ -13,10 +13,10 @@ const App = () => {
     if (mode === "dark" && icon === sun) {
       setMode("light");
       setIcon(moon)
-      document.body.style.backgroundColor = "#ffff";
+      document.body.style.backgroundColor = "aliceblue";
     } else {
       setMode("dark");
-      document.body.style.backgroundColor = "#010409";
+      document.body.style.backgroundColor = "#171717";
       setIcon(sun)
     }
   };
@@ -38,9 +38,9 @@ const App = () => {
         <Route 
           path="/"
           element={
-            <div className="container ">
+            <div className="container">
               <Textform
-                heading="Try TextUtils - Word Counter, Character Counter, Remove Extra Spaces "
+                heading="Try TextUtils - JSON To String, String TO JSON, Word Counter, Character Counter, Remove Extra Spaces"
                 mode={mode}
               />
             </div>

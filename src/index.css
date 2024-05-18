@@ -1,5 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&family=Roboto:wght@400;300&display=swap");
-body{
-    background-color: #23272f
-    
-}
+@font-face {
+    font-family: 'Quicksand';
+    src: url('./assets/Quicksand-Regular.otf') format('woff2');
+  }
+  
+  body {
+    background-color: #171717;
+    font-family: 'Quicksand', sans-serif; 
+    font-weight: 400;
+  }
+  
