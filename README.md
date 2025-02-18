@@ -4,21 +4,18 @@
 
 <h3 id="description">TextUtils - Word Counter | Character Counter | LowerCase - UpperCase | Know your Read Time | Sentence case</h3>
 
-<h2>🚀 Demo</h2>
+<h2>🚀 Live Demo</h2>
 
-<h3>https://text-utils-word.vercel.app/</h3>
+<h3>https://textutilsbyani.netlify.app</h3>
 
-<h2>🧐 Features</h2>
+<h2>📌 Features</h2>
 
-<h3>Here're some of the project's best features:</h3>
-
-*  <h4> Analyze Your Text 🕵 - </h4>
-   Textutils gives you a way to analyze your text quickly and efficiently. Be it a word count or character count.  
-*  <h4> Free to use💸-</h4>
-    TextUtils is a free character counter tool that provides instant character count & word count statistics for a given text. TextUtils reports the number of words and characters. Thus it is suitable for 
-    writing text with a word/ character limit.   
-* <h4> Browser Compatible 🌐 -</h4>
-    This word counter software works in any web browser such as Chrome Firefox Internet Explorer and Safari It counts characters in Facebook blogs books, Excel documents PDF documents essays, etc. Opera
+* Convert text to uppercase and lowercase
+* Convert json to string and json
+* Remove extra spaces
+* Copy text to the clipboard
+* Word and character counter
+* Dark mode support 🌙
 
 <h2>🛠️ Installation Steps:</h2>
 
