@@ -4,11 +4,11 @@
 
 <h3 id="description">TextUtils - Word Counter | Character Counter | LowerCase - UpperCase | Know your Read Time | Sentence case</h3>
 
-<h2>🚀 Live Demo</h2>
+<h3>🚀 Live Demo</h3>
 
-<h3>https://textutilsbyani.netlify.app</h3>
+<h4>https://textutilsbyani.netlify.app</h4>
 
-<h2>📌 Features</h2>
+<h3>📌 Features</h3>
 
 * Convert text to uppercase and lowercase
 * Convert json to string and json
@@ -17,7 +17,7 @@
 * Word and character counter
 * Dark mode support 🌙
 
-<h2>🛠️ Installation Steps:</h2>
+<h3>🛠️ Installation Steps:</h3>
 
 <p>1. git clone -</p>
 
@@ -32,7 +32,7 @@ https://github.com/animeredits/TextUtils.git
 <p>4. npm run dev</p>
 
   
-<h2>💻 Built with</h2>
+<h3>💻 Built with</h3>
 
 Technologies used in the project:
 
